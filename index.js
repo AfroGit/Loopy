@@ -68,14 +68,22 @@
 // countdown(5);
 
 /*Change randomFraction to return a random number instead of returning 0. */ 
-function randomFraction() {
+// function randomFraction() {
 
   
-      let result = 0;
-      while(result === 0){
-        result = Math.random();
+//       let result = 0;
+//       while(result === 0){
+//         result = Math.random();
 
-      }
-  return result;
+//       }
+//   return result;
+// };
+// console.log(randomFraction());
+// --------------------------------------------------
+/*We are calling Math.random(), multiplying the result by 10, then passing the value to Math.floor() function to round the value down to the nearest whole number. */ 
+
+function randomWholeNum() {
+
+  return Math.floor(Math.random() * 10);
 };
-console.log(randomFraction(1));
+console.log(randomWholeNum())
