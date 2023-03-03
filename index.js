@@ -99,3 +99,5 @@ function randomRange(myMin, myMax) {
   
 };
 console.log(randomRange(5, 10));
+// ---------------------------------------------
+/* */ 
