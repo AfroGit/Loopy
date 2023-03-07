@@ -93,17 +93,29 @@
 Create a function called randomRange that takes a range myMin and myMax and returns a random whole number that's greater than or equal to myMin, and is less than or equal to myMax, inclusive.
  */ 
 
-function randomRange(myMin, myMax) {
+// function randomRange(myMin, myMax) {
   
-  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+//   return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
   
-};
-console.log(randomRange(5, 10));
+// };
+// console.log(randomRange(5, 10));
 // ---------------------------------------------
 /*Use the conditional operator in the checkEqual function to check if two numbers are equal or not. The function should return either the string Equal or the string Not Equal. */ 
 
-function checkEqual(a, b) {
-return a === b ? 'Equal' : 'Not Equal';
+// function checkEqual(a, b) {
+// return a === b ? 'Equal' : 'Not Equal';
+// }
+
+// console.log(checkEqual(1, 2));
+
+// ------------------------------------------------
+
+/*In the checkSign function, use multiple conditional operators - following the recommended format used in findGreaterOrEqual - to check if a number is positive, negative or zero. The function should return positive, negative or zero. */ 
+
+function checkSign(num) {
+return (num > 0) ? 'positive'
+  : (num < 0) ? 'negative'
+  : 'zero'
 }
 
-console.log(checkEqual(1, 2));
+console.log(checkSign(-1));
